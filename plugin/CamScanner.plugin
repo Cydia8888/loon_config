@@ -1,9 +1,9 @@
 #!name=扫描全能王
 #!desc=解锁扫描全能王
-#!homepage=https://github.com/deezertidal
-#!author=NobyDa
-#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/cs.png
-
+#!author=Cydia8888
+#!homepage=https://github.com/Cydia8888/loon_config
+#!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/cs.png
+#!原作者：野比
 [Mitm]
 hostname =ap*.intsig.net
 
