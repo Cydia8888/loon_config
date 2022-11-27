@@ -1,0 +1,11 @@
+#!name=扫描全能王
+#!desc=解锁扫描全能王
+#!author=Cydia8888
+#!homepage=https://github.com/Cydia8888/loon_config
+#!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/cs.png
+#!原作者：墨鱼
+[Mitm]
+hostname =ap*.intsig.net
+
+[Script]
+http-response ^https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\? requires-body=1, script-path= https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/camscanner.js, tag=扫描全能王
