@@ -2,6 +2,7 @@
 #!desc=开屏页广告有缓存,需要全新应用
 #!author=Github-Cydia8888
 #!homepage=https://github.com/Cydia8888/loon_config
+#!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/qqnews.png
 # 腾讯新闻开屏广告(须全新应用),新闻列表(要闻/财经等),专题广告,xx旅游列表等广告去除
 
 [Mitm]
