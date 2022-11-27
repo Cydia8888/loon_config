@@ -2,7 +2,7 @@
 #!desc=Wps vip+稻壳会员
 #!author=Github-Cydia8888
 #!homepage=https://github.com/Cydia8888/loon_config
-#!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/.png
+#!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/wps.png
 [Script]
 http-response ^https?:\/\/account\.wps\.cn\/api\/v3\/mine\/vips script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPuserCrack.js, requires-body=true, timeout=10, tag=wps稻壳2
 http-request ^https?:\/\/.+\.(docer.)?wps.cn\/(user\/v1\/vip|android\/mb\/buy|download\/v1\/ios|partner\/invoke\/usable|(api|rank)\/v1(\/mobile\/mb)?\/detail) script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPowerCrack.js, requires-body=true, timeout=10, tag=WPS稻壳
