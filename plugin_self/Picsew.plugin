@@ -1,0 +1,13 @@
+#!name=Picsew
+#!desc=解锁会员
+#!author=Cydia8888
+#!homepage=https://github.com/Cydia8888/loon_config
+#!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/picsew.png
+#脚本作者：yqc_007
+
+[MITM]
+hostname= buy.itunes.apple.com
+
+[Script]
+
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path= https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/PicsewPro.js, requires-body=1, timeout=10, tag=PicsewPro
