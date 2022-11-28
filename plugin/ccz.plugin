@@ -1,0 +1,12 @@
+#!name=西窗词
+#!desc=解锁会员
+#!author=Cydia8888
+#!homepage=https://github.com/Cydia8888/loon_config
+#!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/xcz.png
+#脚本作者：墨鱼
+
+[MITM]
+hostname= lchttpapi.xczim.com
+
+[Script]
+https://lchttpapi.xczim.com/* requires-body=1,script-path= https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/xcz.js, tag=西窗词
