@@ -3,7 +3,7 @@
 #!author=Cydia8888
 #!homepage=https://github.com/Cydia8888/loon_config
 #!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/meipian.png
-#原作者：litieyin
+#脚本作者：litieyin
 
 [MITM]
 hostname=poster.meipian.cn
