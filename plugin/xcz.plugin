@@ -9,4 +9,4 @@
 hostname= lchttpapi.xczim.com
 
 [Script]
-http-response https://lchttpapi.xczim.com/* requires-body=1,script-path= https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/xcz.js, tag=西窗烛
+http-response https://lchttpapi.xczim.com/* script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/xcz.js, requires-body=1, timeout=10, tag=西窗烛
