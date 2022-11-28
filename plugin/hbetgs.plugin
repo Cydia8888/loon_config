@@ -9,4 +9,4 @@
 hostname= www.babybooks.top
 
 [Script]
-http-response ^http[s]?:\/\/www.babybooks.top\/v0\/profile requires-body=1,script-path= https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/hbetgs.js
+http-response ^http[s]?:\/\/www.babybooks.top\/v0\/profile requires-body=1,script-path= https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/hbetgs.js,tag=汉堡儿童故事
