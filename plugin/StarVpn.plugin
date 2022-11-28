@@ -5,7 +5,7 @@
 #!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/starvpn.png
 
 [Script]
-http-response ^https?:\/\/.*\.cloudfront.net\/api\/(clients|purchases)\/(info|validate) script-path=https://raw.githubusercontent.com/cyubuchen/scripts/unlock/StarVpn.js, requires-body=true, timeout=10 ,tag=StarVPN
+http-response ^https?:\/\/.*\.cloudfront.net\/api\/(clients|purchases)\/(info|validate) script-path=https://raw.githubusercontent.com/cyubuchen/scripts/unlock/StarVpn.js, requires-body=true, timeout=10, tag=StarVPN
 
 [MITM]
 hostname=*.cloudfront.net
