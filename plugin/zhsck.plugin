@@ -3,7 +3,7 @@
 #!author=Cydia8888
 #!homepage=https://github.com/Cydia8888/loon_config
 #!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/zhsck.png
-#原作者：彭于晏
+#脚本作者：彭于晏
 
 [MITM]
 hostname=api.chuangqi.store
