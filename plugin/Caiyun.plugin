@@ -3,7 +3,7 @@
 #!author=Cydia8888
 #!homepage=https://github.com/Cydia8888/loon_config
 #!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/caiyun.png
-#原作者：ddgksf2013
+#脚本作者：ddgksf2013
 
 [MITM]
 hostname=biz.caiyunapp.com,ad.caiyunapp.com
