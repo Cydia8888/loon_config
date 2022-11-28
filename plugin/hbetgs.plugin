@@ -1,0 +1,12 @@
+#!name=汉堡儿童故事
+#!desc=解锁会员
+#!author=Cydia8888
+#!homepage=https://github.com/Cydia8888/loon_config
+#!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/hbetgs.png
+#原作者：彭于晏
+
+[MITM]
+hostname= www.babybooks.top
+
+[Script]
+http-response ^http[s]?:\/\/www.babybooks.top\/v0\/profile requires-body=1,script-path= https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/hbetgs.js
