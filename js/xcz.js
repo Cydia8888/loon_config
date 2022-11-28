@@ -1,7 +1,9 @@
 /*
-
+脚本名称：西窗词会员解锁
+脚本地址：https://github.com/Cydia8888/loon_config
+原创作者：墨鱼
+使用方法：
 https://lchttpapi.xczim.com/* url script-response-body https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/xcz.js
-
 hostname = lchttpapi.xczim.com
 
 */
