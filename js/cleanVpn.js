@@ -1,3 +1,9 @@
+/**************************
+[Script]
+http-response https://buy.itunes.apple.com/verifyReceipt script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/cleanVpn.js,requires-body=1,max-size=0
+[MITM]
+hostname = buy.itunes.apple.com
+***************************/
 var body = $response.body; 
 var obj = JSON.parse(body); 
 
