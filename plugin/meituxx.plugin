@@ -4,8 +4,8 @@
 #!homepage=https://github.com/Cydia8888/loon_config
 #!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/meituxx.png
 #脚本作者：R·E
+
+[MITM]
 hostname= api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com
 [Script]
-
-
 http-response ^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/ requires-body=1,script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/MeiTuXiuXiu.js, tag=美图秀秀
