@@ -2,7 +2,7 @@
 #!desc=美图秀秀解锁
 #!author=Cydia8888
 #!homepage=https://github.com/Cydia8888/loon_config
-#!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/meittuxx.png
+#!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/meituxx.png
 #脚本作者：R·E
 hostname= api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com
 [Script]
