@@ -1,12 +1,12 @@
-#!name=美篇
-#!desc=美篇解锁vip
+#!name=麻豆
+#!desc=麻豆社区解锁全部视频
 #!author=Cydia8888
 #!homepage=https://github.com/Cydia8888/loon_config
 #!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/meipian.png
-#脚本作者：litieyin
+#脚本作者：yqc_123
 
 [MITM]
-hostname=poster.meipian.cn
+hostname=ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com
 
 [Script]
-http-response ^https:\//poster.meipian.cn\/5.3\/user\/info requires-body=1,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/meipian.js
+http-request ^https?:\/\/.*\/api\/app\/media\/m3u8\/.*\.m3u8 requires-body=1,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/mdsqallcrack.js
