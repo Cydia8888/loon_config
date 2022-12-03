@@ -1,0 +1,16 @@
+#!name=Vista看天下
+#!desc=解锁会员
+#!author=Cydia8888
+#!homepage=https://github.com/Cydia8888/loon_config
+#!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/vista.png
+#脚本作者：彭于晏
+
+[MITM]
+hostname= open3.vistastory.com
+
+[Script]
+http-response ^http[s]?:\/\/open3.vistastory.com script-path= https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Vista.js, requires-body=1, timeout=10, tag=Vista看天下
+
+[URL Rewrite]
+^https:\/\/open3\.vistastory\.com\/v3\/api\/notice\/need_read_notice_number? reject
+^https:\/\/open3\.vistastory\.com\/v3\/api\/index\/loading_ad2? reject
