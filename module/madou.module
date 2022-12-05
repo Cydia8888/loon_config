@@ -1,0 +1,8 @@
+#!url=https://raw.githubusercontent.com/Cydia8888/loon_config/master/module/madou.module
+#!name=麻豆视频
+#!desc=进App开脚本,按通知提示操作
+#!author=Cydia8888
+[Script]
+麻豆视频=type=http-request,pattern=^https?:\/\/.*\/api\/app\/media\/m3u8\/.*\.m3u8,requires-body=1,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/mdsqallcrack.js
+[MITM]
+hostname= %APPEND% ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com
