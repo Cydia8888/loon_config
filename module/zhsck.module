@@ -1,0 +1,8 @@
+#!url=https://raw.githubusercontent.com/Cydia8888/loon_config/master/module/zhsck.module
+#!name=中华诗词库
+#!desc=解锁会员
+#!author=Cydia8888
+[Script]
+中华诗词库=type=http-response,pattern=http:\/\/api\.chuangqi\.store\/,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/zhsck.js
+[MITM]
+hostname= %APPEND% api.chuangqi.store
