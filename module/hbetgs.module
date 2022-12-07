@@ -3,6 +3,6 @@
 #!desc=破解会员
 #!author=Cydia8888
 [Script]
-麻豆视频=type=http-response,pattern=^http[s]?:\/\/www.babybooks.top\/v0\/profile,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/hbetgs.js
+汉堡儿童故事=type=http-response,pattern=^http[s]?:\/\/www.babybooks.top\/v0\/profile,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/hbetgs.js
 [MITM]
 hostname= %APPEND% www.babybooks.top
