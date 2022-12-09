@@ -1,0 +1,7 @@
+#!name=电视家
+#!desc=解锁VIP
+#!author=Cydia8888
+[Script]
+电视家=type=http-response,pattern=^https?:\/\/123\.56\.125\.184\/api\/v\d\/user\/info,requires-body=1,script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/dianshijia.js
+[MITM]
+hostname = %APPEND% 123.56.125.184
