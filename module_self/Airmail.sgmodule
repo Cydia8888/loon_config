@@ -2,6 +2,6 @@
 #!desc=解锁永久订阅
 #!author=Cydia8888
 [Script]
-Airmail=type=http-response,pattern=https://api.revenuecat.com/v1/subscribers/F17CK3HQPLJN,requires-body=1,script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/Airmail.js
+Airmail=type=http-response,pattern=https://api.revenuecat.com/v1/subscribers/,requires-body=1,script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/Airmail.js
 [MITM]
 hostname = %APPEND% api.revenuecat.com
