@@ -11,6 +11,6 @@ http-response https://buy.itunes.apple.com/verifyReceipt script-path=https://raw
 /******************************
 #与其它插件hstname重复，屏蔽掉
 #如没有重复hostname,必须使用。
-[MITM]
-hostname = buy.itunes.apple.com
+#[MITM]
+#hostname = buy.itunes.apple.com
 *******************************/
