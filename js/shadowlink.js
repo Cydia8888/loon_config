@@ -1,3 +1,14 @@
+/******************************************
+#小火箭配置:
+#!name=ShadowlinkVPN
+#!desc=解锁VIP
+#!author=Cydia8888
+[Script]
+ShadowlinkVPN=type=http-response,pattern=https://buy.itunes.apple.com/verifyReceipt,requires-body=1,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/shadowlink.js
+[MITM]
+hostname = %APPEND% buy.itunes.apple.com
+*******************************************/
+
 var body = $response.body; 
 var obj = JSON.parse(body); 
 
