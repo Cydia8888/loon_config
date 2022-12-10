@@ -2,6 +2,6 @@
 #!desc=解锁会员权限
 #!author=Cydia8888
 [Script]
-如期=type=http-response,pattern=^https:\/\/www\.freshhome\.top\/ url script-response-body RuQiProCrack.js,requires-body=1,script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/Ruqi.js
+如期=type=http-response,pattern=^https:\/\/www\.freshhome\.top\/,requires-body=1,script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/Ruqi.js
 [MITM]
 hostname = %APPEND% www.freshhome.top
