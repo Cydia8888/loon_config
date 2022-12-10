@@ -1,0 +1,7 @@
+#!name=Vpn-unlimited 
+#!desc=解锁会员权限
+#!author=Cydia8888
+[Script]
+VPN-unlimited=type=http-response,pattern=https://buy.itunes.apple.com/verifyReceipt,requires-body=1,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/vpnUnlimited.js
+[MITM]
+hostname = %APPEND% buy.itunes.apple.com
