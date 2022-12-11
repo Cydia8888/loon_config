@@ -1,0 +1,9 @@
+#!name=Vpn-unlimited
+#!desc=解锁订阅
+#!author=Cydia8888
+#!homepage=https://github.com/Cydia8888/loon_config
+#!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/vpn-unlimited.png
+#脚本作者：Passer_by_yun
+
+[MITM]
+hostname = buy.itunes.apple.com
