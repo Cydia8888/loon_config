@@ -1,3 +1,7 @@
+/***********************************
+# > 005 西窗烛，解锁vip会员，但是不能下载收费字体，会员字体可用，可下载收费书籍,【🟢】  
+^https?:\/\/lchttpapi.xczim.com\/1.1\/(users|functions/checkDidBoughtBook|functions/receiveBookCollectionByProUser|functions/getMyCoins|functions/buyFont) url script-response-body https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/xichuangzhu/Script/xichuangzhu.js
+***********************************/
  var body = $response.body; 
  var url = $request.url; 
  var obj = JSON.parse(body); 
