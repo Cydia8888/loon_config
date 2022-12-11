@@ -1,0 +1,8 @@
+#!name=西窗烛
+#!desc=解锁会员权限
+#!author=Cydia8888
+#!脚本作者: lutqhysky
+[Script]
+西窗烛=type=http-response,pattern=^https?:\/\/lchttpapi.xczim.com\/1.1\/(users|functions/checkDidBoughtBook|functions/receiveBookCollectionByProUser|functions/getMyCoins|functions/buyFont),requires-body=1,script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/xichuangzhu.js
+[MITM]
+hostname = %APPEND% lchttpapi.xczim.com
