@@ -1,0 +1,12 @@
+#!name=西窗烛
+#!desc=解锁会员，文库下载，字体不能下载
+#!author=Cydia8888
+#!homepage=https://github.com/Cydia8888/loon_config
+#!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/xcz.png
+#脚本作者：lutqhysky
+
+[MITM]
+hostname = *.xczim.com
+
+[Script]
+http-response ^https?:\/\/lchttpapi.xczim.com\/1.1\/(users|functions/checkDidBoughtBook|functions/receiveBookCollectionByProUser|functions/getMyCoins|functions/buyFont) script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/xichuangzhu.js, requires-body=1, timeout=10, tag=西窗烛
