@@ -6,9 +6,6 @@
 
 [Script]
 http-response https://buy.itunes.apple.com/verifyReceipt script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/shadowlink.js,requires-body=1,max-size=0
-/******************************
-#与其它插件hstname重复，屏蔽掉
-#如没有重复hostname,必须使用。
+
 [MITM]
 hostname = buy.itunes.apple.com
-*******************************/
