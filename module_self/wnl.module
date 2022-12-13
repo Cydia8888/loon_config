@@ -1,0 +1,8 @@
+#!name=万年历
+#!desc=解锁会员权限
+#!author=Cydia8888
+#!脚本作者: 墨鱼
+[Script]
+万年历=type=http-response,pattern= https://r.51wnl-cq.com/Api/User/GetExtInfo,requires-body=1,script-path= https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/wnl.js
+[MITM]
+hostname = %APPEND% r.51wnl-cq.com
