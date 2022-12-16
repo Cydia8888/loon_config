@@ -1,0 +1,35 @@
+# NAME: 机场访问
+# AUTHOR: Cydia8888
+# REPO: https://github.com/Cydia8888/loon_config
+# UPDATED: 2022-12-16
+
+#Free✈️
+DOMAIN-SUFFIX,zero.marisalnc.com
+DOMAIN-SUFFIX,3cm.uk
+#氦网Helium
+DOMAIN-SUFFIX,console.henet.uk
+#Crush
+DOMAIN-SUFFIX,crushs.cyou
+DOMAIN-SUFFIX,crushsr.com
+#魔戒
+DOMAIN-SUFFIX,mojie.buzz
+DOMAIN-SUFFIX,mojie.ws
+DOMAIN-SUFFIX,mojie.site
+DOMAIN-SUFFIX,mojie.me
+DOMAIN-SUFFIX,mojie.nl
+DOMAIN-SUFFIX,mojie.la
+DOMAIN-SUFFIX,mojie.in
+DOMAIN-SUFFIX,mojie.pw
+DOMAIN-SUFFIX,mojie.cyou
+DOMAIN-SUFFIX,mojie.best
+DOMAIN-SUFFIX,mojie.link
+DOMAIN-SUFFIX,mojie.info
+DOMAIN-SUFFIX,mojie.work
+#Flygogo(飞狗)
+DOMAIN-SUFFIX,flygogo.app
+#JJCloud
+DOMAIN-SUFFIX,jjcloud.xyz
+#机场Pro
+DOMAIN-SUFFIX,jichang.pro
+#旁路-ByPassGo
+DOMAIN-SUFFIX,bypassgo.com
