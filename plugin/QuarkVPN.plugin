@@ -1,0 +1,12 @@
+#!name=QuarkVPN
+#!desc=解锁会员
+#!author=Cydia8888
+#!homepage=https://github.com/Cydia8888/loon_config
+#!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/QuarkVPN.png
+#脚本作者:Passer_by_yun
+
+[MITM]
+hostname = *api.italianbooray.com
+
+[Script]
+http-response ^https?:\/\/.*api\.italianbooray\.com\/Api\/getAccountInfo script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/QuarkVpnProCrack.js, requires-body=1, timeout=10, tag=QuarkVPN
