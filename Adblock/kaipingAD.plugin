@@ -1,0 +1,22 @@
+#!name=去开屏广告
+#!desc=自用
+#!author=Cydia8888
+#!homepage=https://github.com/Cydia8888/loon_config
+#!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/icon.png
+#!UPDATED: 2022-12-20
+
+/*****************************/
+
+[MITM]
+hostname = adm.10jqka.com.cn,fund.10jqka.com.cn,appactive.1234567.com.cn
+
+[URL Rewrite]
+
+#同花顺至尊版：
+^https?:\/\/adm\.10jqka\.com\.cn\/interface\/ad\/recommend
+
+#同花顺爱基金：
+^https?:\/\/fund\.10jqka\.com\.cn\/hqapi\/static\/homepage\/queryinfo\/
+
+#天天基金：
+^https?:\/\/appactive\.1234567\.com\.cn\/AppoperationApi\/OperationService\/GetAppStartImg
