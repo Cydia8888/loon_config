@@ -2,10 +2,7 @@
 #!desc=自用
 #!author=Cydia8888
 #!homepage=https://github.com/Cydia8888/loon_config
-#!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/icon.png
 #!UPDATED: 2022-12-20
-
-/*****************************/
 
 [MITM]
 hostname = %APPEND% adm.10jqka.com.cn,fund.10jqka.com.cn,appactive.1234567.com.cn
