@@ -11,11 +11,6 @@
 
 hostname = adm.10jqka.com.cn,fund.10jqka.com.cn,appactive.1234567.com.cn
 
-[Rule]
-
-# > 屏蔽Filza升级检测
-DOMAIN-SUFFIX,tigisoftware.com,REJECT-DROP
-
 [URL Rewrite]
 
 # > 同花顺至尊版：
