@@ -6,10 +6,9 @@
 #!UPDATED: 2022-12-20
 
 #********************************************
-
-[MITM]
-
-hostname = adm.10jqka.com.cn,fund.10jqka.com.cn,appactive.1234567.com.cn
+[Rule]
+# > 屏蔽Filza正版检测
+DOMAIN-SUFFIX,tigisoftware.com,REJECT-DROP
 
 [URL Rewrite]
 
@@ -19,3 +18,7 @@ hostname = adm.10jqka.com.cn,fund.10jqka.com.cn,appactive.1234567.com.cn
 ^https?:\/\/fund\.10jqka\.com\.cn\/hqapi\/static\/homepage\/queryinfo\/ - reject-200
 # > 天天基金：
 ^https?:\/\/appactive\.1234567\.com\.cn\/AppoperationApi\/OperationService\/GetAppStartImg - reject-dict
+
+[MITM]
+
+hostname = adm.10jqka.com.cn,fund.10jqka.com.cn,appactive.1234567.com.cn
