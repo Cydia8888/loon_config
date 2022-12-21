@@ -4,11 +4,6 @@
 #!homepage=https://github.com/Cydia8888/loon_config
 #!UPDATED: 2022-12-21
 
-
-[Rule]
-# > 屏蔽Filza正版检测
-DOMAIN-SUFFIX,tigisoftware.com,reject-drop
-
 [URL Rewrite]
 # > 同花顺至尊版
 ^https?:\/\/adm\.10jqka\.com\.cn\/interface\/ad\/recommend - reject-200
