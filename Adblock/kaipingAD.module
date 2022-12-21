@@ -5,6 +5,9 @@
 #!UPDATED: 2022-12-20
 
 
+[Rule]
+DOMAIN-SUFFIX,tigisoftware.com,REJECT-DROP
+
 [URL Rewrite]
 # > 同花顺至尊版：
 ^https?:\/\/adm\.10jqka\.com\.cn\/interface\/ad\/recommend - reject-200
