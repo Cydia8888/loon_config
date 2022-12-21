@@ -7,7 +7,7 @@
 
 [Rule]
 # > 屏蔽Filza升级检测
-DOMAIN-SUFFIX,tigisoftware.com,REJECT-DROP
+DOMAIN-SUFFIX,tigisoftware.com,reject-drop
 
 [URL Rewrite]
 # > 同花顺至尊版
