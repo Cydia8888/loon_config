@@ -6,7 +6,7 @@
 
 
 [Rule]
-# > 屏蔽Filza升级检测
+# > 屏蔽Filza正版检测
 DOMAIN-SUFFIX,tigisoftware.com,reject-drop
 
 [URL Rewrite]
