@@ -6,16 +6,17 @@
 
 
 [Rule]
+# > 屏蔽Filza升级检测
 DOMAIN-SUFFIX,tigisoftware.com,REJECT-DROP
 
 [URL Rewrite]
-# > 同花顺至尊版：
+# > 同花顺至尊版
 ^https?:\/\/adm\.10jqka\.com\.cn\/interface\/ad\/recommend - reject-200
 
-# > 同花顺爱基金：
+# > 同花顺爱基金
 ^https?:\/\/fund\.10jqka\.com\.cn\/hqapi\/static\/homepage\/queryinfo\/ - reject-200
 
-# > 天天基金：
+# > 天天基金
 ^https?:\/\/appactive\.1234567\.com\.cn\/AppoperationApi\/OperationService\/GetAppStartImg - reject-dict
 
 [MITM]
