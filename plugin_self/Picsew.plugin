@@ -10,4 +10,4 @@ hostname= buy.itunes.apple.com
 
 [Script]
 
-http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path= https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/PicsewPro.js, requires-body=1, timeout=10, tag=PicsewPro
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path= https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/Picsew.js, requires-body=1, timeout=10, tag=PicsewPro
