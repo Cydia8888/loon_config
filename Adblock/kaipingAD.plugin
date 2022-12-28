@@ -19,8 +19,8 @@
 # > 京东金融
 ^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/(new)?na\/m\/getLoadingPicture - reject
 # > 京东特价版
-^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_SmartPush - REJECT-200
-^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_advertising - REJECT-200
+^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_SmartPush - reject-200
+^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_advertising - reject-200
 
 [Script]
 # > 京东
