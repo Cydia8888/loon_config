@@ -26,7 +26,7 @@ DOMAIN-SUFFIX,tigisoftware.com,REJECT-DROP
 # > 京东金融
 ^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/(new)?na\/m\/getLoadingPicture - reject
 
-# > 京东极速版
+# > 京东特价版
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_SmartPush - REJECT-200
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_advertising - REJECT-200
 
