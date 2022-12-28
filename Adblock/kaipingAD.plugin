@@ -3,7 +3,11 @@
 #!author=Cydia8888
 #!homepage=https://github.com/Cydia8888/loon_config
 #!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/icon.png
-#!UPDATED: 2022-12-20
+#!UPDATED: 2022-12-28
+
+[Rule]
+# > 屏蔽Filza正版检测
+DOMAIN-SUFFIX,tigisoftware.com,reject-drop
 
 [URL Rewrite]
 # > 同花顺至尊版：
