@@ -5,10 +5,6 @@
 #!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/icon.png
 #!UPDATED: 2022-12-28
 
-[Rule]
-# > 屏蔽Filza正版检测
-DOMAIN-SUFFIX,tigisoftware.com,reject
-
 [URL Rewrite]
 # > 同花顺至尊版：
 ^https?:\/\/adm\.10jqka\.com\.cn\/interface\/ad\/recommend - reject-200
