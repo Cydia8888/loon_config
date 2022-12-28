@@ -30,10 +30,13 @@ DOMAIN-SUFFIX,tigisoftware.com,REJECT-DROP
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_SmartPush - REJECT-200
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_advertising - REJECT-200
 
+# > 华尔街见闻
+^https?:\/\/api-one-wscn\.awtmt\.com\/apiv1\/advertising\/ads\/
+
 [Script]
 京喜去广告=type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/api\?functionId=delivery_show,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/startup.js
 京东去广告_热词=type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotWords,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/jd_json.js
 京东去广告_热搜=type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotSearchTerms,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/jd_json.js
 
 [MITM]
-hostname = %APPEND% adm.10jqka.com.cn,fund.10jqka.com.cn,appactive.1234567.com.cn,ms.jr.jd.com,bdsp-x.jd.com,dsp-x.jd.com,api.m.jd.com
+hostname = %APPEND% adm.10jqka.com.cn,fund.10jqka.com.cn,appactive.1234567.com.cn,ms.jr.jd.com,bdsp-x.jd.com,dsp-x.jd.com,api.m.jd.com,*.awtmt.com
