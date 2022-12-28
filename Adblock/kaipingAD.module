@@ -26,6 +26,10 @@ DOMAIN-SUFFIX,tigisoftware.com,REJECT-DROP
 # > 京东金融
 ^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/(new)?na\/m\/getLoadingPicture - reject
 
+# > 京东极速版
+^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_SmartPush _ REJECT-200
+^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_advertising _ REJECT-200
+
 [Script]
 京喜去广告=type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/api\?functionId=delivery_show,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/startup.js
 京东去广告_热词=type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotWords,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/jd_json.js
