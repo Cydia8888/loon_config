@@ -2,34 +2,33 @@
 #!desc=自用，需全新应用，开规则进入
 #!author=Cydia8888
 #!homepage=https://github.com/Cydia8888/loon_config
-#!UPDATED: 2022-12-28
+#!UPDATED: 2022-12-29
 
 [Rule]
 # > 屏蔽Filza正版检测
 DOMAIN-SUFFIX,tigisoftware.com,REJECT-DROP
+# > 自定义去广告，杀伤力大
+DOMAIN-KEYWORD,pglstatp,REJECT
+DOMAIN-KEYWORD,pangolin,REJECT-DROP
+DOMAIN-KEYWORD,npoe7n7r,REJECT
+DOMAIN-KEYWORD,fundtoutiao,REJECT
 
 [URL Rewrite]
 # > 同花顺至尊版
 ^https?:\/\/adm\.10jqka\.com\.cn\/interface\/ad\/recommend - reject-200
-
 # > 同花顺爱基金
 ^https?:\/\/fund\.10jqka\.com\.cn\/hqapi\/static\/homepage\/queryinfo\/ - reject-200
-
 # > 天天基金
 ^https?:\/\/appactive\.1234567\.com\.cn\/AppoperationApi\/OperationService\/GetAppStartImg - reject-dict
-
 # > 京东
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start - reject-dict
 ^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=queryMaterialAdverts - reject
 ^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ - reject
-
 # > 京东金融
 ^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/(new)?na\/m\/getLoadingPicture - reject
-
 # > 京东特价版
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_SmartPush - REJECT-200
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_advertising - REJECT-200
-
 # > 华尔街见闻
 ^https?:\/\/api-one-wscn\.awtmt\.com\/apiv1\/advertising\/ads\/ - reject
 
