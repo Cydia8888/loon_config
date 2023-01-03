@@ -78,6 +78,7 @@
 ^https?:\/\/log.+?baidu\.com - reject
 ^https?:\/\/sa\d\.tuisong\.baidu\.com - reject-img
 ^https?:\/\/www.baidu.com\/?action=static&ms=1&version=css_page_2@0.*? - reject
+
 [Script]
 # > 京东
 http-response ^https?:\/\/api\.m\.jd\.com\/api\?functionId=delivery_show,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/startup.js , tag=京东_开屏
