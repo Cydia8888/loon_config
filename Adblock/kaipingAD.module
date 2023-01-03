@@ -33,7 +33,7 @@ DOMAIN-KEYWORD,googleads,REJECT
 # > 华尔街见闻
 ^https?:\/\/api-one-wscn\.awtmt\.com\/apiv1\/advertising\/ads\/ - reject
 
-/****以下为百度系去广告规则****/
+#/****以下为百度系去广告规则****/
 
 # > 百度地图
 ^https:\/\/dss0.bdstatic.com\/-0U0bnSm1A5BphGlnYG\/ - reject-200
