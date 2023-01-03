@@ -23,9 +23,6 @@
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_advertising - reject-200
 # > 华尔街见闻
 ^https?:\/\/api-one-wscn\.awtmt\.com\/apiv1\/advertising\/ads\/ - reject
-
-# > 百度系去广告
-
 # > 百度网盘
 ^https?:\/\/pan\.baidu\.com\/rest\/\d\.\d\/pcs\/adx - reject
 ^https?:\/\/pan\.baidu\.com\/act\/api\/activityentry - reject
@@ -85,4 +82,4 @@ http-response ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotWords,r
 http-response ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotSearchTerms,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/jd_json.js , tag=京东_热搜
 
 [MITM]
-hostname = adm.10jqka.com.cn,fund.10jqka.com.cn,appactive.1234567.com.cn,ms.jr.jd.com,bdsp-x.jd.com,dsp-x.jd.com,api.m.jd.com,*.awtmt.com,issuecdn.baidupcs.com,cdn.bcebos.com,rp.hpplay.cn,*.bdstatic.com,*.baidu.com
+hostname = adm.10jqka.com.cn,fund.10jqka.com.cn,appactive.1234567.com.cn,ms.jr.jd.com,bdsp-x.jd.com,dsp-x.jd.com,api.m.jd.com,*.awtmt.com,issuecdn.baidupcs.com,*.cdn.bcebos.com,rp.hpplay.cn,*.bdstatic.com,*.baidu.com
