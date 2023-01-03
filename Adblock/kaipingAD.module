@@ -57,6 +57,17 @@ DOMAIN-KEYWORD,googleads,REJECT
 ^https?+:\/\/ss0\.bdstatic\.com/.+?_\d{3}_\d{4}\.jpg - reject-200
 ^https?:\/\/gss0\.bdstatic\.com\/.+?\/static\/wiseindex\/img\/bd_red_packet\.png - reject-img
 ^https?:\/\/tb2\.bdstatic\.com\/tb\/mobile\/spb\/widget\/jump - reject-img
+# > 百度输入法
+^http:\/\/r6\.mo\.baidu\.com\/res\/file/advertisement\/files\/.+\.jpg - reject
+^http:\/\/res\.mi\.baidu\.com\/imeres\/ime-res\/advertisement\/files\/.+\.jpg - reject
+^https:\/\/mime\.baidu\.com\/v5\/activity\/advertisementnonrealtime - reject
+^https:\/\/mime\.baidu\.com\/v5\/start_screen_ads\/list - reject
+^https:\/\/mime\.baidu\.com\/v5\/hotpatch\/check\?hotpatch - reject
+# > 百度翻译
+^https?:\/\/mime\.baidu\.com\/v\d\/IosStart\/getStartInfo$ - reject
+^https?:\/\/mime\.baidu\.com\/v\d\/activity\/advertisement - reject
+# > 百度文库
+^https?:\/\/appwk\.baidu\.com\/xpage\/interface\/wknaad - reject-200
 # > 百度
 ^https?:\/\/fcvbjbcebos.baidu.com\/.+.mp4 - reject
 ^https?:\/\/cover.baidu.com\/cover\/page\/dspSwitchAds\/ - reject
@@ -76,10 +87,11 @@ DOMAIN-KEYWORD,googleads,REJECT
 ^https?:\/\/log.+?baidu\.com - reject
 ^https?:\/\/sa\d\.tuisong\.baidu\.com - reject-img
 ^https?:\/\/www.baidu.com\/?action=static&ms=1&version=css_page_2@0.*? - reject
+
 [Script]
 京喜去广告=type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/api\?functionId=delivery_show,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/startup.js
 京东去广告_热词=type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotWords,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/jd_json.js
 京东去广告_热搜=type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotSearchTerms,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/jd_json.js
 
 [MITM]
-hostname = %APPEND% adm.10jqka.com.cn,fund.10jqka.com.cn,appactive.1234567.com.cn,ms.jr.jd.com,bdsp-x.jd.com,dsp-x.jd.com,api.m.jd.com,*.awtmt.com,pan.baidu.com,issuecdn.baidupcs.com,update.pan.baidu.com,cdn.bcebos.com,rp.hpplay.cn,*.bdstatic.com,*.baidu.com
+hostname = %APPEND% adm.10jqka.com.cn,fund.10jqka.com.cn,appactive.1234567.com.cn,ms.jr.jd.com,bdsp-x.jd.com,dsp-x.jd.com,api.m.jd.com,*.awtmt.com,issuecdn.baidupcs.com,cdn.bcebos.com,rp.hpplay.cn,*.bdstatic.com,*.baidu.com
