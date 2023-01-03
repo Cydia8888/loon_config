@@ -88,7 +88,7 @@ DOMAIN-KEYWORD,googleads,REJECT
 ^https?:\/\/sa\d\.tuisong\.baidu\.com - reject-img
 ^https?:\/\/www.baidu.com\/?action=static&ms=1&version=css_page_2@0.*? - reject
 # > 新浪新闻
-^https?+:\/\/edit\.sinaapp\.com\/ua\?t=adv data="https://raw.githubusercontent.com/Keywos/Rule/main/mocks/reject-dict.json"
+^https?:\/\/edit\.sinaapp\.com\/ua\?t=adv - reject-dict
 [Script]
 京喜去广告=type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/api\?functionId=delivery_show,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/startup.js
 京东去广告_热词=type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotWords,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/jd_json.js
