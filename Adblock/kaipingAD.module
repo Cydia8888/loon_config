@@ -32,9 +32,6 @@ DOMAIN-KEYWORD,googleads,REJECT
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_advertising - REJECT-200
 # > 华尔街见闻
 ^https?:\/\/api-one-wscn\.awtmt\.com\/apiv1\/advertising\/ads\/ - reject
-
-# > *******以下为百度系去广告规则*******
-
 # > 百度地图
 ^https:\/\/dss0.bdstatic.com\/-0U0bnSm1A5BphGlnYG\/ - reject-200
 ^https:\/\/dss0\.bdstatic\.com\/.+/tam-ogel\/.+\.(jpg|mp4) - reject
