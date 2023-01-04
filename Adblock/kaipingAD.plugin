@@ -3,7 +3,7 @@
 #!author=Cydia8888
 #!homepage=https://github.com/Cydia8888/loon_config
 #!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/icon.png
-#!UPDATED: 2023-01-03
+#!UPDATED: 2023-01-04
 
 [URL Rewrite]
 # > 同花顺至尊版：
@@ -78,12 +78,21 @@
 ^https?:\/\/log.+?baidu\.com - reject
 ^https?:\/\/sa\d\.tuisong\.baidu\.com - reject-img
 ^https?:\/\/www.baidu.com\/?action=static&ms=1&version=css_page_2@0.*? - reject
+# > 高德地图净化
+^https?:\/\/m5\.amap\.com\/ws\/asa\/ads_attribution - reject
+^https?:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend - reject-dict
+^https?:\/\/optimus-ads\.amap\.com\/uploadimg\/\w+\.gif - reject-img
 
 [Script]
 # > 京东
 http-response ^https?:\/\/api\.m\.jd\.com\/api\?functionId=delivery_show,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/startup.js , tag=京东_开屏
 http-response ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotWords,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/jd_json.js , tag=京东_热词
 http-response ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotSearchTerms,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/jd_json.js , tag=京东_热搜
-
+# > 高德地图净化
+http-response ^https?:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js ,tag=高德地图净化1
+http-response ^https?:\/\/m5\.amap\.com\/ws\/valueadded\/alimama\/splash_screen,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js ,tag=高德地图净化2
+http-response ^https?:\/\/sns\.amap\.com\/ws\/msgbox\/pull,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js ,tag=高德地图净化3
+http-response ^https?:\/\/m5\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaas,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js ,tag=高德地图净化4
+http-response ^https?:\/\/m5\.amap\.com\/ws\/shield\/search\/new_hotword,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js ,tag=高德地图净化5
 [MITM]
-hostname = adm.10jqka.com.cn,fund.10jqka.com.cn,appactive.1234567.com.cn,ms.jr.jd.com,bdsp-x.jd.com,dsp-x.jd.com,api.m.jd.com,*.awtmt.com,issuecdn.baidupcs.com,*.cdn.bcebos.com,rp.hpplay.cn,*.bdstatic.com,*.baidu.com
+hostname = adm.10jqka.com.cn,fund.10jqka.com.cn,appactive.1234567.com.cn,ms.jr.jd.com,bdsp-x.jd.com,dsp-x.jd.com,api.m.jd.com,*.awtmt.com,issuecdn.baidupcs.com,*.cdn.bcebos.com,rp.hpplay.cn,*.bdstatic.com,*.baidu.com,optimus-ads.amap.com, m5.amap.com, sns.amap.com
