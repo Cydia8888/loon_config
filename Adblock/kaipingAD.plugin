@@ -23,13 +23,14 @@
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_advertising - reject-200
 # > 华尔街见闻
 ^https?:\/\/api-one-wscn\.awtmt\.com\/apiv1\/advertising\/ads\/ - reject
-# > 酷我音乐
+/* # > 酷我音乐
 ^https?+:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/MobileAdServer\/ - reject-200
 ^https?+:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/EcomResourceServer\/AdPlayPage\/adinfo - reject-200
 ^https?:\/\/rich\.kuwo\.cn\/AdService\/kaiping\/.+ - reject
 ^https?:\/\/img4\.kwcdn\.kuwo\.cn\/star\/upload\/.+ - reject
 ^https?:\/\/.+\.kwcdn\.kuwo\.cn\/star\/upload\/.+ - reject
 ^https?:\/\/mobilead\.kuwo\.cn\/EcomResourceServer\/adBubble\/.+ - reject
+*/
 # > 高德地图净化
 ^https?:\/\/m5\.amap\.com\/ws\/asa\/ads_attribution - reject
 ^https?:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend - reject-dict
