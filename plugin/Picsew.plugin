@@ -3,10 +3,11 @@
 #!author=Cydia8888
 #!homepage=https://github.com/Cydia8888/loon_config
 #!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/picsew.png
-#脚本作者：Passer_by_yun
+#!脚本作者：Passer_by_yun
+#!主机buy.itunes.apple.com多模块共同，故放在本地
 
-[MITM]
-hostname=buy.itunes.apple.com
+#![MITM]
+#!hostname=buy.itunes.apple.com
 
 [Script]
 http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ requires-body=1,script-path= https://raw.githubusercontent.com/yqc007/QuantumultX/master/Picsew.js
