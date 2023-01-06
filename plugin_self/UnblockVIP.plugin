@@ -3,6 +3,7 @@
 #!author=Cydia8888
 #!homepage=https://github.com/Cydia8888/loon_config
 #!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/icon.png
+#!主机buy.itunes.apple.com多模块共同，故放在本地
 
 [Script]
 http-response https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/ColorfulClouds_SVIP.js, requires-body=true, timeout=60, tag=彩云天气SVIP, enable = true
@@ -14,4 +15,4 @@ http-response ^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|e
 http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/Picsew.js, requires-body=true, timeout=10, tag=PicsewVIP
 
 [Mitm]
-hostname = biz.caiyunapp.com,pan.baidu.com,account.wps.cn,*.docer.wps.cn,vipapi.wps.cn,*.kuwo.cn, *.lrts.me,buy.itunes.apple.com
+hostname = biz.caiyunapp.com,pan.baidu.com,account.wps.cn,*.docer.wps.cn,vipapi.wps.cn,*.kuwo.cn, *.lrts.me
