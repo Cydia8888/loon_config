@@ -4,12 +4,9 @@
 #!author=Cydia8888
 #!homepage=https://github.com/Cydia8888/loon_config
 #!脚本作者:Marol62926
-
+#!主机buy.itunes.apple.com多模块共同主机，故放在本地
 [Script]
-http-response https://buy.itunes.apple.com/verifyReceipt script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/shadowlink.js, requires-body=1, max-size=0, tag=ShadowLink
+http-response https://buy.itunes.apple.com/verifyReceipt script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/shadowlink.js, requires-body=1, max-size=0, 
 
-/******************************
-# > 多模块共同主机，故放在本地
-[MITM]
-hostname = buy.itunes.apple.com
-******************************/
+#![MITM]
+#!hostname = buy.itunes.apple.com
