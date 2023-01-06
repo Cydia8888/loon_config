@@ -9,7 +9,7 @@
 http-response https://buy.itunes.apple.com/verifyReceipt script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/shadowlink.js, requires-body=1, max-size=0, tag=ShadowLink
 
 /******************************
-# > 与UnlockVIP模块主机相同，故省略
+# > 多模块共同主机，故放在本地
 [MITM]
 hostname = buy.itunes.apple.com
 ******************************/
