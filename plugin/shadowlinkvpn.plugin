@@ -3,9 +3,10 @@
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/shadowlinkvpn.png
 #!homepage=https://github.com/deezertidal
 #!author=Marol62926
+#!主机buy.itunes.apple.com多模块共同，故放在本地
 
 [Script]
 http-response https://buy.itunes.apple.com/verifyReceipt script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/shadowlink.js,requires-body=1,max-size=0
 
-[MITM]
-hostname = buy.itunes.apple.com
+#![MITM]
+#!hostname = buy.itunes.apple.com
