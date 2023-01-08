@@ -6,8 +6,8 @@
 
 [Script]
 http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/shadowlink.js, requires-body=1, max-size=0, tag=ShadowLink
-http-response https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) script-path=https://raw.githubusercontent.com/chiupam/surge/main/scripts/unblock/BaiduCloud.js, requires-body=true, timeout=60, tag=彩云天气SVIP, enable = true
-http-response https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user script-path=https://raw.githubusercontent.com/chiupam/surge/main/scripts/unblock/BaiduCloud.js, requires-body=true, timeout=60, tag=百度网盘SVIP, enable = true
+http-response https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) script-path=https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/caiyun.js, requires-body=true, timeout=60, tag=彩云天气SVIP, enable = true
+http-response https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js, requires-body=true, timeout=60, tag=百度网盘SVIP, enable = true
 http-response ^https?:\/\/account\.wps\.cn\/api\/v3\/mine\/vips script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPuserCrack.js, requires-body=true, timeout=10, tag=wps稻壳2
 http-request ^https?:\/\/.+\.(docer.)?wps.cn\/(user\/v1\/vip|android\/mb\/buy|download\/v1\/ios|partner\/invoke\/usable|(api|rank)\/v1(\/mobile\/mb)?\/detail) script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPowerCrack.js, requires-body=true, timeout=10, tag=WPS稻壳
 http-response ^https?:\/\/account\.wps\.cn\/api\/users script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js, requires-body=true, timeout=10, tag=WpsVip
