@@ -1,7 +1,7 @@
 # NAME: 机场访问
 # AUTHOR: Cydia8888
 # REPO: https://github.com/Cydia8888/loon_config
-# UPDATED: 2022-12-27
+# UPDATED: 2023-01-08
 
 # > Free✈️
 DOMAIN-SUFFIX,zero.marisalnc.com
@@ -35,3 +35,5 @@ DOMAIN-SUFFIX,jichang.pro
 DOMAIN-SUFFIX,bypassgo.com
 # > usdtvfk.top
 DOMAIN-SUFFIX,usdtvfk.top
+# > ikuuu.co
+DOMAIN-SUFFIX,ikuuu.co
