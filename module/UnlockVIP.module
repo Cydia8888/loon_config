@@ -4,7 +4,7 @@
 #!homepage=https://github.com/Cydia8888/loon_config
 #!主机buy.itunes.apple.com多模块共同，故放在本地
 [Script]
-百度云加速=type=http-response,pattern=https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
+百度云加速=type=http-response,pattern=https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
 彩云天气pro=type=http-response,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),requires-body=1,script-path=https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/caiyun.js
 Picsew=type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/Picsew.js
 酷我音乐完美解锁=type=http-response,pattern=^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).*,requires-body=1,script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kw.js
