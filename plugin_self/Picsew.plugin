@@ -4,10 +4,10 @@
 #!homepage=https://github.com/Cydia8888/loon_config
 #!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/picsew.png
 #!脚本作者：yqc_007
-#!主机buy.itunes.apple.com多模块共同，故放在本地
 
-#![MITM]
-#!hostname= buy.itunes.apple.com
+
+[MITM]
+hostname= buy.itunes.apple.com
 
 [Script]
 http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path= https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/Picsew.js, requires-body=1, timeout=10, tag=PicsewPro
