@@ -2,8 +2,9 @@
 #!desc= 彩云,度盘,WPS,酷我,Picsew
 #!author=Cydia8888
 #!homepage=https://github.com/Cydia8888/loon_config
-#!主机buy.itunes.apple.com多模块共同，故放在本地
+
 [Script]
+ShadowLink=type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/shadowlink.js
 百度云加速=type=http-response,pattern=https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
 彩云天气pro=type=http-response,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),requires-body=1,script-path=https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/caiyun.js
 Picsew=type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/Picsew.js
@@ -13,7 +14,7 @@ WPS会员=type=http-response,pattern=^https?:\/\/.*?account\.wps\.(com|cn)(:\d+)
 稻壳2=type=http-response,pattern=^https?:\/\/account\.wps\.cn\/api\/v3\/mine\/vips,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPuserCrack.js,requires-body=1,timeout=10
 
 [Mitm]
-hostname = %APPEND% pan.baidu.com,biz.caiyunapp.com,ad.caiyunapp.com,*.kuwo.cn, *.lrts.me,account.wps.cn,*account.wps.com,*.docer.wps.cn,vipapi.wps.cn
+hostname = %APPEND% pan.baidu.com,biz.caiyunapp.com,ad.caiyunapp.com,*.kuwo.cn, *.lrts.me,account.wps.cn,*account.wps.com,*.docer.wps.cn,vipapi.wps.cn,buy.itunes.apple.com
 
 [URL Rewrite]
 ^https:\/\/ad\.caiyunapp\.com\/ - reject
