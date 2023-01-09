@@ -1,0 +1,9 @@
+#!name=百度云加速
+#!desc=百度云倍速播放
+#!author=Cydia8888
+
+[Mitm]
+hostname = %APPEND% pan.baidu.com
+
+[Script]
+百度云加速=type=http-response,pattern= ^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user,requires-body=1,script-path=https://github.com/ddgksf2013/dev/raw/main/BaiDuCloudProCrack.js
