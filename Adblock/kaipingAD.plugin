@@ -1,9 +1,9 @@
-#!name=去开屏广告
-#!desc=原创，需全新应用，开规则进入
+#!name=自用去广告
+#!desc=部分应用需全新安装，开规则进入
 #!author=Cydia8888
 #!homepage=https://github.com/Cydia8888/loon_config
 #!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/Noads.png
-#!UPDATED: 2023-01-04
+#!UPDATED: 2023-01-09
 
 [URL Rewrite]
 # > 同花顺至尊版：
