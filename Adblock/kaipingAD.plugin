@@ -23,6 +23,8 @@
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_advertising - reject-200
 # > 华尔街见闻
 ^https?:\/\/api-one-wscn\.awtmt\.com\/apiv1\/advertising\/ads\/ - reject
+# > 皮皮图片横幅广告
+^https?://www\.xemhs\.com\/video\/
 # > 高德地图净化
 ^https?:\/\/.*\.amap\.com\/ws\/boss\/order_web\/\w{8}_information - reject-200
 ^https?:\/\/.*\.amap\.com\/ws\/asa\/ads_attribution - reject
