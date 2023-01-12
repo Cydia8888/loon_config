@@ -24,7 +24,7 @@
 # > 华尔街见闻
 ^https?:\/\/api-one-wscn\.awtmt\.com\/apiv1\/advertising\/ads\/ - reject
 # > 皮皮图片横幅广告
-^https?://www\.xemhs\.com\/video\/ - reject
+^https?:\/\/www\.xemhs\.com\/video\/ - reject
 # > 高德地图净化
 ^https?:\/\/.*\.amap\.com\/ws\/boss\/order_web\/\w{8}_information - reject-200
 ^https?:\/\/.*\.amap\.com\/ws\/asa\/ads_attribution - reject
@@ -100,4 +100,4 @@ http-response ^https?:\/\/.*\.amap\.com\/ws\/msgbox\/pull,requires-body=1,script
 http-response ^https?:\/\/.*\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaas,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js ,tag=高德地图净化4
 http-response ^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/new_hotword,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js ,tag=高德地图净化5
 [MITM]
-hostname = adm.10jqka.com.cn,fund.10jqka.com.cn,appactive.1234567.com.cn,ms.jr.jd.com,bdsp-x.jd.com,dsp-x.jd.com,api.m.jd.com,*.awtmt.com,issuecdn.baidupcs.com,*.cdn.bcebos.com,rp.hpplay.cn,*.bdstatic.com,*.baidu.com,*.amap.com,*.alicdn.com,xemhs.com
+hostname = adm.10jqka.com.cn,fund.10jqka.com.cn,appactive.1234567.com.cn,ms.jr.jd.com,bdsp-x.jd.com,dsp-x.jd.com,api.m.jd.com,*.awtmt.com,issuecdn.baidupcs.com,*.cdn.bcebos.com,rp.hpplay.cn,*.bdstatic.com,*.baidu.com,*.amap.com,*.alicdn.com
