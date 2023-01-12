@@ -34,6 +34,13 @@ DOMAIN-KEYWORD,googleads,REJECT
 ^https?:\/\/api-one-wscn\.awtmt\.com\/apiv1\/advertising\/ads\/ - reject
 # > 皮皮图片横幅广告
 ^https?://www\.xemhs\.com\/video\/
+# > 高德地图净化
+^https?:\/\/.*\.amap\.com\/ws\/boss\/order_web\/\w{8}_information - reject-200
+^https?:\/\/.*\.amap\.com\/ws\/asa\/ads_attribution - reject
+^https?:\/\/.*\.amap\.com\/ws\/shield\/scene\/recommend - reject-dict
+^https?:\/\/.*\.amap\.com\/uploadimg\/\w+\.gif - reject-img
+^https?:\/\/.*\.amap\.com\/ws\/valueadded\/weather - reject-dict
+^https?:\/\/img\.alicdn\.com\/imgextra\/i1\/O1CN01z5u64r1EdKvtRa19q_!!6000000000374-2-tps-120-120\.png - reject-img
 
 # > ******百度系去广告******
 
@@ -89,13 +96,6 @@ DOMAIN-KEYWORD,googleads,REJECT
 ^https?:\/\/log.+?baidu\.com - reject
 ^https?:\/\/sa\d\.tuisong\.baidu\.com - reject-img
 ^https?:\/\/www.baidu.com\/?action=static&ms=1&version=css_page_2@0.*? - reject
-# > 高德地图净化
-^https?:\/\/.*\.amap\.com\/ws\/boss\/order_web\/\w{8}_information - reject-200
-^https?:\/\/.*\.amap\.com\/ws\/asa\/ads_attribution - reject
-^https?:\/\/.*\.amap\.com\/ws\/shield\/scene\/recommend - reject-dict
-^https?:\/\/.*\.amap\.com\/uploadimg\/\w+\.gif - reject-img
-^https?:\/\/.*\.amap\.com\/ws\/valueadded\/weather - reject-dict
-^https?:\/\/img\.alicdn\.com\/imgextra\/i1\/O1CN01z5u64r1EdKvtRa19q_!!6000000000374-2-tps-120-120\.png - reject-img
 
 [Script]
 京喜去广告=type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/api\?functionId=delivery_show,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/startup.js
