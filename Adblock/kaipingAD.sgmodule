@@ -33,7 +33,7 @@ DOMAIN-KEYWORD,googleads,REJECT
 # > 华尔街见闻
 ^https?:\/\/api-one-wscn\.awtmt\.com\/apiv1\/advertising\/ads\/ - reject
 # > 皮皮图片横幅广告
-^https?:\/\/www\.xemhs\.com\/video\/
+^https?:\/\/www\.xemhs\.com\/video\/ - reject
 # > 高德地图净化
 ^https?:\/\/.*\.amap\.com\/ws\/boss\/order_web\/\w{8}_information - reject-200
 ^https?:\/\/.*\.amap\.com\/ws\/asa\/ads_attribution - reject
