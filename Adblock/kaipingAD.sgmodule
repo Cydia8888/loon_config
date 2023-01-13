@@ -21,10 +21,6 @@ DOMAIN-KEYWORD,googleads,REJECT
 ^https?:\/\/fund\.10jqka\.com\.cn\/hqapi\/static\/homepage\/queryinfo\/ - reject-200
 # > 天天基金
 ^https?:\/\/appactive\.1234567\.com\.cn\/AppoperationApi\/OperationService\/GetAppStartImg - reject-dict
-# > 京东
-^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start - reject-dict
-^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=queryMaterialAdverts - reject
-^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ - reject
 # > 京东金融
 ^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/(new)?na\/m\/getLoadingPicture - reject
 # > 京东特价版
@@ -98,14 +94,11 @@ DOMAIN-KEYWORD,googleads,REJECT
 ^https?:\/\/www.baidu.com\/?action=static&ms=1&version=css_page_2@0.*? - reject
 
 [Script]
-京喜去广告=type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/api\?functionId=delivery_show,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/startup.js
-京东去广告_热词=type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotWords,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/jd_json.js
-京东去广告_热搜=type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotSearchTerms,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/jd_json.js
-
 高德地图净化1=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/main-page,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
 高德地图净化2=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/valueadded\/alimama\/splash_screen,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
 高德地图净化3=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/msgbox\/pull,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
 高德地图净化4=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaas,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
 高德地图净化5=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/new_hotword,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
+
 [MITM]
-hostname = %APPEND% adm.10jqka.com.cn,fund.10jqka.com.cn,appactive.1234567.com.cn,ms.jr.jd.com,bdsp-x.jd.com,dsp-x.jd.com,api.m.jd.com,*.awtmt.com,issuecdn.baidupcs.com,*.cdn.bcebos.com,rp.hpplay.cn,*.bdstatic.com,*.baidu.com,*.alicdn.com,*.amap.com
+hostname = %APPEND% adm.10jqka.com.cn,fund.10jqka.com.cn,appactive.1234567.com.cn,ms.jr.jd.com,api.m.jd.com,*.awtmt.com,issuecdn.baidupcs.com,*.cdn.bcebos.com,rp.hpplay.cn,*.bdstatic.com,*.baidu.com,*.alicdn.com,*.amap.com
