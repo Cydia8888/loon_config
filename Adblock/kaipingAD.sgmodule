@@ -30,6 +30,8 @@ DOMAIN-KEYWORD,googleads,REJECT
 ^https?:\/\/api-one-wscn\.awtmt\.com\/apiv1\/advertising\/ads\/ - reject
 # > 皮皮图片横幅广告
 ^https?:\/\/www\.xemhs\.com\/video\/ - reject
+# > 美人图中间广告
+^https?:\/\/tu3\.bitins\.buzz?id=\d{5} - reject
 # > 高德地图净化
 ^https?:\/\/.*\.amap\.com\/ws\/boss\/order_web\/\w{8}_information - reject-200
 ^https?:\/\/.*\.amap\.com\/ws\/asa\/ads_attribution - reject
