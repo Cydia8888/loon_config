@@ -5,7 +5,6 @@
 #!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/icon.png
 
 [Script]
-http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/shadowlink.js, requires-body=true, timeout=10, tag=ShadowLink
 http-response https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/ColorfulClouds_SVIP.js, requires-body=true, timeout=60, tag=彩云天气SVIP, enable = true
 http-response ^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/BaiDuCloudProCrack.js, requires-body=true, timeout=60, tag=百度网盘SVIP, enable = true
 http-response ^https?:\/\/account\.wps\.cn\/api\/v3\/mine\/vips script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/WPSDocerVIPuserCrack.js, requires-body=true, timeout=10, tag=wps稻壳2
@@ -13,6 +12,6 @@ http-request ^https?:\/\/.+\.(docer.)?wps.cn\/(user\/v1\/vip|android\/mb\/buy|do
 http-response ^https?:\/\/account\.wps\.cn\/api\/users script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/Wps.js, requires-body=true, timeout=10, tag=WpsVip
 http-response ^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).* script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/kuwovip.js,requires-body=true, timeout=10, tag=酷我音乐Vip
 http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/Picsew.js, requires-body=true, timeout=10, tag=PicsewVIP
-
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/shadowlink.js, requires-body=true, timeout=10, tag=ShadowLink
 [Mitm]
 hostname = biz.caiyunapp.com,pan.baidu.com,account.wps.cn,*.docer.wps.cn,vipapi.wps.cn,*.kuwo.cn, *.lrts.me,buy.itunes.apple.com
