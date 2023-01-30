@@ -28,6 +28,8 @@ DOMAIN-KEYWORD,googleads,REJECT
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_advertising - REJECT-200
 # > 华尔街见闻
 ^https?:\/\/api-one-wscn\.awtmt\.com\/apiv1\/advertising\/ads\/ - reject
+# > 雪球开屏(倒计时仍在)
+^https?:\/\/xqimg\.imedao\.com\/\w{24}\.(jpg|png)$
 # > 皮皮图片横幅广告
 ^https?:\/\/www\.xemhs\.com\/video\/ - reject
 # > 高德地图净化
@@ -106,4 +108,4 @@ DOMAIN-KEYWORD,googleads,REJECT
 高德地图净化5=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/new_hotword,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
 
 [MITM]
-hostname = %APPEND% adm.10jqka.com.cn,fund.10jqka.com.cn,appactive.1234567.com.cn,ms.jr.jd.com,api.m.jd.com,*.awtmt.com,issuecdn.baidupcs.com,*.cdn.bcebos.com,rp.hpplay.cn,*.bdstatic.com,*.baidu.com,*.alicdn.com,*.amap.com
+hostname = %APPEND% adm.10jqka.com.cn,fund.10jqka.com.cn,appactive.1234567.com.cn,ms.jr.jd.com,api.m.jd.com,*.awtmt.com,issuecdn.baidupcs.com,*.cdn.bcebos.com,rp.hpplay.cn,*.bdstatic.com,*.baidu.com,*.alicdn.com,*.amap.com,*.imedao.com
