@@ -35,8 +35,6 @@ DOMAIN-KEYWORD,mktadsodr,REJECT
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_advertising - REJECT-200
 # > 华尔街见闻
 ^https?:\/\/api-one-wscn\.awtmt\.com\/apiv1\/advertising\/ads\/ - reject
-# > 雪球开屏广告
-^https?:\/\/xqimg\.imedao\.com\/\w{24}\.jpg$ - reject-200
 # > 皮皮图片横幅广告
 ^https?:\/\/www\.xemhs\.com\/video\/ - reject
 # > 高德地图净化
