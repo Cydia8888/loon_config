@@ -19,7 +19,7 @@ DOMAIN-KEYWORD,npoe7n7r,REJECT
 DOMAIN-KEYWORD,fundtoutiao,REJECT
 DOMAIN-KEYWORD,googleads,REJECT
 DOMAIN-KEYWORD,lianmeng88,REJECT
-DOMAIN-KEYWORD,mktadsodr.ppdai.com,REJECT
+DOMAIN-KEYWORD,mktadsodr,REJECT
 
 [URL Rewrite]
 # > 同花顺至尊版
