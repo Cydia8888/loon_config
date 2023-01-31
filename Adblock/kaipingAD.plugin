@@ -12,10 +12,10 @@ DOMAIN,gdmf.apple.com,REJECT
 DOMAIN,updates-http.cdn-apple.com,REJECT
 DOMAIN,xp.apple.com,REJECT
 # > 屏蔽Filza正版检测
-DOMAIN-SUFFIX,tigisoftware.com,REJECT-DROP
+DOMAIN-SUFFIX,tigisoftware.com,REJECT
 # > 敏感词去广告，杀伤力大，可能误杀
 DOMAIN-KEYWORD,pglstatp,REJECT
-DOMAIN-KEYWORD,pangolin,REJECT-DROP
+DOMAIN-KEYWORD,pangolin,REJECT
 DOMAIN-KEYWORD,npoe7n7r,REJECT
 DOMAIN-KEYWORD,fundtoutiao,REJECT
 DOMAIN-KEYWORD,googleads,REJECT
