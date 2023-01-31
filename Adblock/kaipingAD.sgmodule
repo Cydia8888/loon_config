@@ -2,9 +2,14 @@
 #!desc=部分应用需全新安装，开规则进入
 #!author=Cydia8888
 #!homepage=https://github.com/Cydia8888/loon_config
-#!UPDATED: 2023-01-30
+#!UPDATED: 2023-01-31
 
 [Rule]
+# > 屏蔽IOS系统更新
+DOMAIN,mesu.apple.com,REJECT
+DOMAIN,gdmf.apple.com,REJECT
+DOMAIN,updates-http.cdn-apple.com,REJECT
+DOMAIN,xp.apple.com,REJECT
 # > 屏蔽Filza正版检测
 DOMAIN-SUFFIX,tigisoftware.com,REJECT-DROP
 # > 敏感词去广告，杀伤力大，可能误杀
