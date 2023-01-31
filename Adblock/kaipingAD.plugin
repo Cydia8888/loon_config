@@ -3,7 +3,7 @@
 #!author=Cydia8888
 #!homepage=https://github.com/Cydia8888/loon_config
 #!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/Noads.png
-#!UPDATED: 2023-01-30
+#!UPDATED: 2023-01-31
 
 [Rule]
 # > 屏蔽IOS系统更新
@@ -15,12 +15,13 @@ DOMAIN,xp.apple.com,REJECT
 DOMAIN-SUFFIX,tigisoftware.com,REJECT-DROP
 # > 敏感词去广告，杀伤力大，可能误杀
 DOMAIN-KEYWORD,pglstatp,REJECT
-DOMAIN-KEYWORD,pangolin,REJECT-DROP
+DOMAIN-KEYWORD,pangolin,REJECT
 DOMAIN-KEYWORD,npoe7n7r,REJECT
 DOMAIN-KEYWORD,fundtoutiao,REJECT
 DOMAIN-KEYWORD,googleads,REJECT
 DOMAIN-KEYWORD,lianmeng88,REJECT
 DOMAIN-KEYWORD,mktadsodr,REJECT
+DOMAIN-KEYWORD,adashx,REJECT
 
 [URL Rewrite]
 # > 同花顺至尊版：
