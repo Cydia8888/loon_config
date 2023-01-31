@@ -5,6 +5,21 @@
 #!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/Noads.png
 #!UPDATED: 2023-01-30
 
+[Rule]
+# > 屏蔽IOS系统更新
+DOMAIN,mesu.apple.com,REJECT
+DOMAIN,gdmf.apple.com,REJECT
+DOMAIN,updates-http.cdn-apple.com,REJECT
+DOMAIN,xp.apple.com,REJECT
+# > 屏蔽Filza正版检测
+DOMAIN-SUFFIX,tigisoftware.com,REJECT-DROP
+# > 敏感词去广告，杀伤力大，可能误杀
+DOMAIN-KEYWORD,pglstatp,REJECT
+DOMAIN-KEYWORD,pangolin,REJECT-DROP
+DOMAIN-KEYWORD,npoe7n7r,REJECT
+DOMAIN-KEYWORD,fundtoutiao,REJECT
+DOMAIN-KEYWORD,googleads,REJECT
+
 [URL Rewrite]
 # > 同花顺至尊版：
 ^https?:\/\/adm\.10jqka\.com\.cn\/interface\/ad\/recommend - reject-200
