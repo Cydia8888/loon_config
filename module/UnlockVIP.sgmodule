@@ -1,5 +1,5 @@
 #!name=UnblockVIP
-#!desc=彩云,度盘,WPS,酷我,Picsew,ShadowLink
+#!desc=彩云,度盘,WPS,酷我,Picsew
 #!author=Cydia8888
 #!homepage=https://github.com/Cydia8888/loon_config
 
@@ -14,7 +14,6 @@ Picsew=type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyRec
 WPS会员=type=http-response,pattern=^https?:\/\/.*?account\.wps\.(com|cn)(:\d+)?\/api\/users\/\w+\/overview$,script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/WPSOffice/Script/WPS.js,requires-body=1,timeout=10
 稻壳1=type=http-request,pattern=^https?:\/\/.+\.(docer.)?wps.cn\/(user\/v1\/vip|android\/mb\/buy|download\/v1\/ios|partner\/invoke\/usable|(api|rank)\/v1(\/mobile\/mb)?\/detail),script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPowerCrack.js,requires-body=1,timeout=10
 稻壳2=type=http-response,pattern=^https?:\/\/account\.wps\.cn\/api\/v3\/mine\/vips,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPuserCrack.js,requires-body=1,timeout=10
-ShadowLink=type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/shadowlink.js
 
 [Mitm]
 hostname = %APPEND% pan.baidu.com,biz.caiyunapp.com,ad.caiyunapp.com,*.kuwo.cn, *.lrts.me,account.wps.cn,*account.wps.com,*.docer.wps.cn,vipapi.wps.cn,buy.itunes.apple.com
