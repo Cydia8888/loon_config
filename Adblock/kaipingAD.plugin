@@ -7,18 +7,20 @@
 
 [Rule]
 # > 屏蔽IOS系统更新
-DOMAIN,mesu.apple.com
-DOMAIN,gdmf.apple.com
-DOMAIN,updates-http.cdn-apple.com
-DOMAIN,xp.apple.com
+DOMAIN,mesu.apple.com,REJECT
+DOMAIN,gdmf.apple.com,REJECT
+DOMAIN,updates-http.cdn-apple.com,REJECT
+DOMAIN,xp.apple.com,REJECT
 # > 屏蔽Filza正版检测
-DOMAIN-SUFFIX,tigisoftware.com
+DOMAIN-SUFFIX,tigisoftware.com,REJECT-DROP
 # > 敏感词去广告，杀伤力大，可能误杀
-DOMAIN-KEYWORD,pglstatp
-DOMAIN-KEYWORD,pangolin
-DOMAIN-KEYWORD,npoe7n7r
-DOMAIN-KEYWORD,fundtoutiao
-DOMAIN-KEYWORD,googleads
+DOMAIN-KEYWORD,pglstatp,REJECT
+DOMAIN-KEYWORD,pangolin,REJECT-DROP
+DOMAIN-KEYWORD,npoe7n7r,REJECT
+DOMAIN-KEYWORD,fundtoutiao,REJECT
+DOMAIN-KEYWORD,googleads,REJECT
+DOMAIN-KEYWORD,lianmeng88,REJECT
+DOMAIN-KEYWORD,mktadsodr,REJECT
 
 [URL Rewrite]
 # > 同花顺至尊版：
