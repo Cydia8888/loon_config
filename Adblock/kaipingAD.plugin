@@ -33,6 +33,8 @@ DOMAIN-KEYWORD,mktadsodr,REJECT
 ^https?:\/\/appactive\.1234567\.com\.cn\/AppoperationApi\/OperationService\/GetAppStartImg - reject-dict
 # > 京东金融
 ^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/(new)?na\/m\/getLoadingPicture - reject
+# > 惊喜
+^https?:\/\/api\.m\.jd\.com\/api\?functionId=delivery_show$ - reject-dict
 # > 京东特价版
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_SmartPush - reject-200
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_advertising - reject-200
