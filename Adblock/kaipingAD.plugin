@@ -3,9 +3,10 @@
 #!author=Cydia8888
 #!homepage=https://github.com/Cydia8888/loon_config
 #!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/Noads.png
-#!UPDATED: 2023-02-04
+#!UPDATED: 2023-02-21
 
 [Rule]
+# > Loon从build304(509)版本已修复插件中Rule中指向策略无效的问题，可以直接安装使用此插件，不用在选择指向策略
 # > 屏蔽IOS系统更新
 DOMAIN,mesu.apple.com,REJECT
 DOMAIN,gdmf.apple.com,REJECT
