@@ -1,8 +1,11 @@
 # NAME: 机场访问
 # AUTHOR: Cydia8888
 # REPO: https://github.com/Cydia8888/loon_config
-# UPDATED: 2023-02-21
+# UPDATED: 2023-02-25
 
+
+# > marisalnc
+DOMAIN-SUFFIX,zero.marisalnc.com
 # > qlgq.top
 DOMAIN-SUFFIX,qlgq.top
 # > Free✈️
