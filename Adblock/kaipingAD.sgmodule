@@ -13,7 +13,7 @@ DOMAIN,xp.apple.com,REJECT
 # > 屏蔽Filza正版检测
 DOMAIN-SUFFIX,tigisoftware.com,REJECT-DROP
 # > 屏蔽iCleaner pro广告
-DOMAIN-SUFFIX,adcolony.com，REJECT-DROP
+DOMAIN-SUFFIX,adcolony.com,REJECT-DROP
 # > 高德、菜鸟净化需要的分流
 DOMAIN,amdc.m.taobao.com,REJECT
 # > 敏感词去广告，杀伤力大，可能误杀
