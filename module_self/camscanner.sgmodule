@@ -2,8 +2,8 @@
 #!desc=破解会员
 #!author=Cydia8888
 
-[Script]
+[SCRIPT]
 扫描全能王=type=http-response,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/camscanner.js
 
-[Mitm]
+[MITM]
 hostname=%APPEND% ap*.intsig.net
