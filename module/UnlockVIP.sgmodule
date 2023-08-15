@@ -8,9 +8,9 @@
 百度云加速=type=http-response,pattern=^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user,requires-body=1,script-path=https://github.com/ddgksf2013/dev/raw/main/BaiDuCloudProCrack.js
 Picsew=type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/Picsew.js
 酷我音乐完美解锁=type=http-response,pattern=^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).*,requires-body=1,script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kw.js
-WPS会员=type=http-response,pattern=^https?:\/\/.*?account\.wps\.(com|cn)(:\d+)?\/api\/users\/\w+\/overview$,script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/WPSOffice/Script/WPS.js,requires-body=1,timeout=10
-稻壳1=type=http-request,pattern=^https?:\/\/.+\.(docer.)?wps.cn\/(user\/v1\/vip|android\/mb\/buy|download\/v1\/ios|partner\/invoke\/usable|(api|rank)\/v1(\/mobile\/mb)?\/detail),script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPowerCrack.js,requires-body=1,timeout=10
-稻壳2=type=http-response,pattern=^https?:\/\/account\.wps\.cn\/api\/v3\/mine\/vips,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPuserCrack.js,requires-body=1,timeout=10
+WPS会员=type=http-response,pattern=^https?:\/\/.*?account\.wps\.(com|cn)(:\d+)?\/api\/users\/\w+\/overview$,requires-body=1,script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/WPSOffice/Script/WPS.js
+稻壳1=type=http-request,pattern=^https?:\/\/.+\.(docer.)?wps.cn\/(user\/v1\/vip|android\/mb\/buy|download\/v1\/ios|partner\/invoke\/usable|(api|rank)\/v1(\/mobile\/mb)?\/detail),requires-body=1,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPowerCrack.js
+稻壳2=type=http-response,pattern=^https?:\/\/account\.wps\.cn\/api\/v3\/mine\/vips,requires-body=1,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPuserCrack.js
 
 [Mitm]
 hostname = %APPEND% pan.baidu.com,biz.caiyunapp.com,ad.caiyunapp.com,*.kuwo.cn, *.lrts.me,account.wps.cn,*account.wps.com,*.docer.wps.cn,vipapi.wps.cn,buy.itunes.apple.com
