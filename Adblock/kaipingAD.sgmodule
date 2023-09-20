@@ -2,7 +2,7 @@
 #!desc=部分应用需全新安装，开规则进入
 #!author=Cydia8888
 #!homepage=https://github.com/Cydia8888/loon_config
-#!UPDATED: 2023-02-28
+#!UPDATED: 2023-09-20
 
 [Rule]
 # > 屏蔽IOS系统更新
@@ -43,6 +43,7 @@ DOMAIN-KEYWORD,mktadsodr,REJECT
 ^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.(show|mshow)\.cn - reject-200
 # > 皮皮图片横幅广告
 ^https?:\/\/www\.xemhs\.com\/video\/ - reject
+^http?:\/\/www\.shmui\.com\/video\/ - reject
 # > 高德地图净化
 ^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/card-service-route-plan\? - reject-dict
 ^https?:\/\/.*\.amap\.com\/ws\/boss\/order_web\/\w{8}_information - reject-200
