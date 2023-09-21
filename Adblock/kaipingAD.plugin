@@ -3,7 +3,7 @@
 #!author=Cydia8888
 #!homepage=https://github.com/Cydia8888/loon_config
 #!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/Noads.png
-#!UPDATED: 2023-09-20
+#!UPDATED: 2023-09-21
 
 [Rule]
 # > Loon从build304(509)版本开始已修复插件中Rule的指向策略无效的问题，可以直接安装使用此插件，不用在选择指向策略
