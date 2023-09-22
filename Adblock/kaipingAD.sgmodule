@@ -14,6 +14,8 @@ DOMAIN,xp.apple.com,REJECT
 DOMAIN-SUFFIX,tigisoftware.com,REJECT-DROP
 # > 屏蔽iCleanerPro扫描完成后的视频广告
 DOMAIN-SUFFIX,adcolony.com,REJECT-DROP
+# > 同花顺屏蔽开屏广告
+DOMAIN,adm.10jqka.com.cn,REJECT-DROP
 # > 高德、菜鸟净化需要的分流
 DOMAIN,amdc.m.taobao.com,REJECT
 # > 敏感词去广告，杀伤力大，可能误杀
@@ -26,8 +28,7 @@ DOMAIN-KEYWORD,lianmeng88,REJECT
 DOMAIN-KEYWORD,mktadsodr,REJECT
 
 [URL Rewrite]
-# > 同花顺至尊版
-^https?:\/\/adm\.10jqka\.com\.cn\/interface\/ad\/recommend - reject-200
+
 # > 同花顺爱基金
 ^https?:\/\/fund\.10jqka\.com\.cn\/hqapi\/static\/homepage\/queryinfo\/ - reject-200
 # > 天天基金
@@ -131,4 +132,4 @@ DOMAIN-KEYWORD,mktadsodr,REJECT
 去搜索框热词=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/new_hotword,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
 
 [MITM]
-hostname = %APPEND% adm.10jqka.com.cn,fund.10jqka.com.cn,appactive.1234567.com.cn,ms.jr.jd.com,api.m.jd.com,bdsp-x.jd.com,dsp-x.jd.com,*.awtmt.com,issuecdn.baidupcs.com,*.cdn.bcebos.com,rp.hpplay.cn,*.bdstatic.com,*.baidu.com,*.alicdn.com,*.amap.com,acs.m.cainiao.com
+hostname = %APPEND% fund.10jqka.com.cn,appactive.1234567.com.cn,ms.jr.jd.com,api.m.jd.com,bdsp-x.jd.com,dsp-x.jd.com,*.awtmt.com,issuecdn.baidupcs.com,*.cdn.bcebos.com,rp.hpplay.cn,*.bdstatic.com,*.baidu.com,*.alicdn.com,*.amap.com,acs.m.cainiao.com
