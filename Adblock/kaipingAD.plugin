@@ -60,8 +60,9 @@ DOMAIN-KEYWORD,mktadsodr,REJECT
 ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.adx\.flyad\.getad reject-dict
 
 # > 皮皮图片横幅广告
-^https?:\/\/www\.xemhs\.com\/video\/ - reject
 ^http?:\/\/www\.shmui\.com\/video\/ -reject
+^https?:\/\/www\.xemhs\.com\/video\/ - reject
+
 # > 高德地图净化
 ^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/card-service-route-plan\? - reject-dict
 ^https?:\/\/.*\.amap\.com\/ws\/boss\/order_web\/\w{8}_information - reject-200
