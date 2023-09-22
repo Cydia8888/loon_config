@@ -18,6 +18,9 @@ DOMAIN-SUFFIX,adcolony.com,REJECT-DROP
 DOMAIN,adm.10jqka.com.cn,REJECT-DROP
 # > 高德、菜鸟净化需要的分流
 DOMAIN,amdc.m.taobao.com,REJECT
+DOMAIN,iyes.youku.com,REJECT
+DOMAIN,vali.cp31.ott.cibntv.net,REJECT
+IP-CIDR,117.161.156.227/32, REJECT,no-resolve
 # > 敏感词去广告，杀伤力大，可能误杀
 DOMAIN-KEYWORD,pglstatp,REJECT
 DOMAIN-KEYWORD,pangolin,REJECT
@@ -41,7 +44,19 @@ DOMAIN-KEYWORD,mktadsodr,REJECT
 # > 华尔街见闻
 ^https?:\/\/api-one-wscn\.awtmt\.com\/apiv1\/advertising\/ads\/ - reject
 # > 菜鸟
-^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.(show|mshow)\.cn - reject-200
+# 首页 - 好物推荐、商品推广、底部标签页、快递详情页、问卷调查、主页图标
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.adkeyword\.get\.cn reject-dict
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.cncommunity\.my\.station\.query\.cn reject-dict
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.(batch\.show\.v2|index)\.cn reject-dict
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbopen\.miniapp\.recommend\.cpc\.cn reject-dict
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbmensa\.research\.researchservice\.(acquire|event|close)\.cn reject-dict
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.homepage\.merge\.get\.cn reject-dict
+# 发现页 - 数字角标、裹裹券
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.com\.cainiao\.cnactivitycenter reject-dict
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.com\.cainiao\.cncreditmarket\.hit\.getactivityhit\.cn reject-dict
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.com\.cainiao\.longquan\.place\.getpageresourcecontent\.cn reject-dict
+# 支付宝 - 菜鸟小程序
+^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.adx\.flyad\.getad reject-dict
 # > 皮皮图片横幅广告
 ^https?:\/\/www\.xemhs\.com\/video\/ - reject
 ^https?:\/\/www\.shmui\.com\/video\/ - reject
@@ -118,9 +133,14 @@ DOMAIN-KEYWORD,mktadsodr,REJECT
 # > 京东
 京东=type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(hotWords|hotSearchTerms),requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/jd_json.js
 # > 菜鸟
-菜鸟首页福利推广=type=http-response,pattern=^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.protocol\.homepage\.get\.cn,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/cainiao_json.js  
-菜鸟今日好物推荐=type=http-response,pattern=^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.adkeyword,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/cainiao_json.js
-菜鸟底部商品推广=type=http-response,pattern=^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.index\.cn,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/cainiao_json.js
+# 移除阿里巴巴通用广告请求
+移除阿里巴巴通用广告请求=type=http-response,pattern=^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch,requires-body=1,script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Alibaba/Alibaba_amdc_reject.js
+# 首页 - 好物推荐、商品推广、底部标签页、快递详情页、问卷调查、主页图标
+移除首页推广=type=http-response,pattern=^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.m?show\.cn,requires-body=1,script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Cainiao/Cainiao_remove_ads.js  
+移除首页推广=type=http-response,pattern=^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.(pickup\.empty\.page|protocol\.homepage)\.get\.cn,requires-body=1,script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Cainiao/Cainiao_remove_ads.js
+移除消息中心推广=type=http-response,pattern=^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.nbfriend\.message\.conversation\.list\.cn,requires-body=1,script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Cainiao/Cainiao_remove_ads.js
+# 支付宝 - 菜鸟小程序
+移除消息中心推广=type=http-response,pattern=^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow,requires-body=1,script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Cainiao/Cainiao_remove_ads.js
 # > 高德地图净化
 首页右中广告=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
 附近页面处理=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/nearbyrec_smart,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
@@ -132,4 +152,4 @@ DOMAIN-KEYWORD,mktadsodr,REJECT
 去搜索框热词=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/new_hotword,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
 
 [MITM]
-hostname = %APPEND% fund.10jqka.com.cn,appactive.1234567.com.cn,ms.jr.jd.com,api.m.jd.com,bdsp-x.jd.com,dsp-x.jd.com,*.awtmt.com,issuecdn.baidupcs.com,*.cdn.bcebos.com,rp.hpplay.cn,*.bdstatic.com,*.baidu.com,*.alicdn.com,*.amap.com,acs.m.cainiao.com
+hostname = %APPEND% fund.10jqka.com.cn,appactive.1234567.com.cn,ms.jr.jd.com,api.m.jd.com,bdsp-x.jd.com,dsp-x.jd.com,*.awtmt.com,issuecdn.baidupcs.com,*.cdn.bcebos.com,rp.hpplay.cn,*.bdstatic.com,*.baidu.com,*.alicdn.com,*.amap.com,acs.m.cainiao.com,guide-acs.m.taobao.com
