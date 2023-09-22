@@ -20,7 +20,7 @@ DOMAIN,adm.10jqka.com.cn,REJECT-DROP
 DOMAIN,amdc.m.taobao.com,REJECT
 DOMAIN,iyes.youku.com,REJECT
 DOMAIN,vali.cp31.ott.cibntv.net,REJECT
-IP-CIDR,117.161.156.227/32, REJECT,no-resolve
+IP-CIDR,117.161.156.227/32,REJECT,no-resolve
 # > 敏感词去广告，杀伤力大，可能误杀
 DOMAIN-KEYWORD,pglstatp,REJECT
 DOMAIN-KEYWORD,pangolin,REJECT
