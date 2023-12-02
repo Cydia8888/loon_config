@@ -16,6 +16,9 @@ DOMAIN-SUFFIX,tigisoftware.com,REJECT-DROP
 DOMAIN-SUFFIX,adcolony.com,REJECT-DROP
 # > 同花顺屏蔽开屏广告
 DOMAIN,adm.10jqka.com.cn,REJECT-DROP
+# > 酷狗概念版开屏广告
+DOMAIN-SUFFIX,pgdt.gtimg.cn,REJECT
+DOMAIN-SUFFIX,adsmind.gdtimg.com,REJECT
 # > 高德、菜鸟净化需要的分流
 DOMAIN,amdc.m.taobao.com,REJECT
 DOMAIN,iyes.youku.com,REJECT
