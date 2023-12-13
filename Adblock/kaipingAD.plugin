@@ -19,7 +19,7 @@ DOMAIN-SUFFIX,adcolony.com,REJECT-DROP
 # > 同花顺屏蔽开屏广告
 DOMAIN,adm.10jqka.com.cn,REJECT-DROP
 # > 好女神网横幅广告
-DOMAIN-SUFFIX,youqu.buzz,REJECT-DROP
+DOMAIN-SUFFIX,neihan888.com,REJECT-DROP
 # > 酷狗概念版开屏广告
 DOMAIN-SUFFIX,pgdt.gtimg.cn,REJECT
 DOMAIN-SUFFIX,adsmind.gdtimg.com,REJECT
