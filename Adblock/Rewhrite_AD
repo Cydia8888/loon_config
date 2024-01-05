@@ -1,0 +1,13 @@
+#!name=自用去广告
+#!desc=用于圈❎的去广告复习规则
+#!author=Cydia8888
+#!homepage=https://github.com/Cydia8888/loon_config
+#!UPDATED: 2024-01-05
+
+hostname = fund.10jqka.com.cn
+
+# > 同花顺爱基金：
+^https?:\/\/fund\.10jqka\.com\.cn\/hqapi\/static\/homepage\/queryinfo\/ - reject
+# > 皮皮图片横幅广告
+^https?:\/\/www\.shmui\.com\/video\/ - reject
+^https?:\/\/www\.xemhs\.com\/video\/ - reject
