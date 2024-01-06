@@ -3,7 +3,7 @@
 #!author=Cydia8888
 #!homepage=https://github.com/Cydia8888/loon_config
 #!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/Noads.png
-#!UPDATED: 2023-01-06
+#!UPDATED: 2024-01-06
 
 [Rule]
 # > Loon从build304(509)版本开始已修复插件中Rule的指向策略无效的问题，可以直接安装使用此插件，不用在选择指向策略
@@ -18,8 +18,6 @@ DOMAIN-SUFFIX,tigisoftware.com,REJECT-DROP
 DOMAIN-SUFFIX,adcolony.com,REJECT-DROP
 # > 同花顺屏蔽开屏广告
 DOMAIN,adm.10jqka.com.cn,REJECT-DROP
-# > 好女神网横幅广告
-DOMAIN-SUFFIX,neihan888.com,REJECT
 # > 酷狗概念版开屏广告
 DOMAIN-SUFFIX,pgdt.gtimg.cn,REJECT
 DOMAIN-SUFFIX,adsmind.gdtimg.com,REJECT
