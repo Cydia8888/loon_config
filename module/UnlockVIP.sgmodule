@@ -13,4 +13,4 @@ WPS会员=type=http-response,pattern=^https?:\/\/.*?account\.wps\.(com|cn)(:\d+)
 稻壳2=type=http-response,pattern=^https?:\/\/account\.wps\.cn\/api\/v3\/mine\/vips,requires-body=1,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPuserCrack.js
 
 [Mitm]
-hostname = %APPEND% pan.baidu.com,biz.caiyunapp.com,ad.caiyunapp.com,*.kuwo.cn, *.lrts.me,account.wps.cn,*account.wps.com,*.docer.wps.cn,vipapi.wps.cn,buy.itunes.apple.com
+hostname = %APPEND% pan.baidu.com,*.caiyunapp.*,*cyapi*,*.kuwo.cn, *.lrts.me,account.wps.cn,*account.wps.com,*.docer.wps.cn,vipapi.wps.cn,buy.itunes.apple.com
