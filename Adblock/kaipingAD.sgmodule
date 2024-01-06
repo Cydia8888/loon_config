@@ -2,7 +2,7 @@
 #!desc=部分应用需全新安装，开规则进入
 #!author=Cydia8888
 #!homepage=https://github.com/Cydia8888/loon_config
-#!UPDATED: 2023-12-13
+#!UPDATED: 2024-01-06
 
 [Rule]
 # > 屏蔽IOS系统更新
@@ -16,8 +16,6 @@ DOMAIN-SUFFIX,tigisoftware.com,REJECT-DROP
 DOMAIN-SUFFIX,adcolony.com,REJECT-DROP
 # > 同花顺屏蔽开屏广告
 DOMAIN,adm.10jqka.com.cn,REJECT-DROP
-# > 好女神网横幅广告
-DOMAIN-SUFFIX,neihan888.com,REJECT-DROP
 # > 酷狗概念版开屏广告
 DOMAIN-SUFFIX,pgdt.gtimg.cn,REJECT
 DOMAIN-SUFFIX,adsmind.gdtimg.com,REJECT
@@ -65,6 +63,7 @@ DOMAIN-KEYWORD,mktadsodr,REJECT
 # > 皮皮图片横幅广告
 ^https?:\/\/www\.xemhs\.com\/video\/ - reject
 ^https?:\/\/www\.shmui\.com\/video\/ - reject
+^https?:\/\/www\.ppzix\.com\/\w{4}\/x - reject-img
 # > 高德地图净化
 ^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/card-service-route-plan\? - reject-dict
 ^https?:\/\/.*\.amap\.com\/ws\/boss\/order_web\/\w{8}_information - reject-200
