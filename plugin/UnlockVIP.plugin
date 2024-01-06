@@ -14,5 +14,5 @@ http-response ^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|e
 http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/Cydia8888/loon_config/master/js/picsewpanda.js, requires-body=true, timeout=10, tag=PicsewVIP
 
 [Mitm]
-hostname = biz.caiyunapp.com,pan.baidu.com,account.wps.cn,*.docer.wps.cn,vipapi.wps.cn,*.kuwo.cn, *.lrts.me,buy.itunes.apple.com
+hostname =*.caiyunapp.*,*cyapi*,pan.baidu.com,account.wps.cn,*.docer.wps.cn,vipapi.wps.cn,*.kuwo.cn, *.lrts.me,buy.itunes.apple.com
 
