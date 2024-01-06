@@ -3,7 +3,7 @@
 #!author=Cydia8888
 #!homepage=https://github.com/Cydia8888/loon_config
 #!icon=https://raw.githubusercontent.com/Cydia8888/loon_config/master/icon/Noads.png
-#!UPDATED: 2023-12-13
+#!UPDATED: 2023-01-06
 
 [Rule]
 # > Loon从build304(509)版本开始已修复插件中Rule的指向策略无效的问题，可以直接安装使用此插件，不用在选择指向策略
@@ -68,7 +68,7 @@ DOMAIN-KEYWORD,mktadsodr,REJECT
 # > 皮皮图片横幅广告
 ^https?:\/\/www\.shmui\.com\/video\/ - reject
 ^https?:\/\/www\.xemhs\.com\/video\/ - reject
-^https?:\/\/www\.ppzix\.com\/\w{4}\/x - reject
+^https?:\/\/www\.ppzix\.com\/\w{4}\/x - reject-img
 
 # > 高德地图净化
 ^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/card-service-route-plan\? - reject-dict
