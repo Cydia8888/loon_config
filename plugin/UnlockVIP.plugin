@@ -6,7 +6,7 @@
 
 [Script]
 http-response ^http[s]?:\/\/biz\.(caiyunapp|cyapi)\.(com|cn)\/v2\/user.*$ requires-body=1,script-path=https://raw.githubusercontent.com/WeiRen0/Scripts/main/cytq.js, requires-body=true, timeout=60, tag=彩云天气SVIP, enable = true
-http-response ^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user script-path=https://github.com/ddgksf2013/dev/raw/main/BaiDuCloudProCrack.js, requires-body=true, timeout=60, tag=百度网盘SVIP, enable = true
+http-response ^https:\/\/pan\.baidu\.com\/rest\/.*\/membership\/user\?app_id script-path=https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.vip.js, requires-body=true, timeout=60, tag=百度网盘SVIP, enable = true
 http-response ^https?:\/\/account\.wps\.cn\/api\/v3\/mine\/vips script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPuserCrack.js, requires-body=true, timeout=10, tag=wps稻壳2
 http-request ^https?:\/\/.+\.(docer.)?wps.cn\/(user\/v1\/vip|android\/mb\/buy|download\/v1\/ios|partner\/invoke\/usable|(api|rank)\/v1(\/mobile\/mb)?\/detail) script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPowerCrack.js, requires-body=true, timeout=10, tag=WPS稻壳
 http-response ^https?:\/\/account\.wps\.cn\/api\/users script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js, requires-body=true, timeout=10, tag=WpsVip
