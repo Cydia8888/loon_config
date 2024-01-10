@@ -65,7 +65,7 @@ DOMAIN-KEYWORD,mktadsodr,REJECT
 # > 皮皮图片横幅广告
 ^https?:\/\/www\.xemhs\.com\/video\/ - reject
 ^https?:\/\/www\.shmui\.com\/video\/ - reject
-^https?:\/\/www\.ppzix\.com\/\w{4}\/x - reject-img
+^https?:\/\/www\.ppzix\.com\/\w{4}\/x - reject
 # > 高德地图净化
 ^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/card-service-route-plan\? - reject-dict
 ^https?:\/\/.*\.amap\.com\/ws\/boss\/order_web\/\w{8}_information - reject-200
