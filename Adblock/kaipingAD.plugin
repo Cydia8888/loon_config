@@ -20,6 +20,8 @@ DOMAIN,adm.10jqka.com.cn,REJECT-DROP
 # > 酷狗概念版开屏广告
 DOMAIN-SUFFIX,pgdt.gtimg.cn,REJECT
 DOMAIN-SUFFIX,adsmind.gdtimg.com,REJECT
+# > 皮皮图片跳转广告
+DOMAIN,orgaorg.com,REJECT
 # > 敏感词去广告，杀伤力大，可能误杀
 DOMAIN-KEYWORD,pglstatp,REJECT
 DOMAIN-KEYWORD,pangolin,REJECT
