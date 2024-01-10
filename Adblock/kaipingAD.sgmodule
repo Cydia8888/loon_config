@@ -19,6 +19,8 @@ DOMAIN,adm.10jqka.com.cn,REJECT-DROP
 # > 酷狗概念版开屏广告
 DOMAIN-SUFFIX,pgdt.gtimg.cn,REJECT
 DOMAIN-SUFFIX,adsmind.gdtimg.com,REJECT
+# > 皮皮图片跳转广告
+DOMAIN,orgaorg.com,REJECT
 # > 高德、菜鸟净化需要的分流
 DOMAIN,amdc.m.taobao.com,REJECT
 DOMAIN,iyes.youku.com,REJECT
