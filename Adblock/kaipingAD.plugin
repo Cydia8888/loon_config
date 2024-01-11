@@ -47,8 +47,6 @@ DOMAIN-KEYWORD,mktadsodr,REJECT
 ^https?:\/\/www\.shmui\.com\/video\/ - reject
 ^https?:\/\/www\.xemhs\.com\/video\/ - reject
 ^https?:\/\/www\.ppzix\.com\/\w{4}\/x - reject
-# > 美人图横幅广告
-^https?:\/\/tx\.btnew\.top\/?id=\w{5} - reject
 
 # > 京东
 ^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=(start|queryMaterialAdverts) - reject
