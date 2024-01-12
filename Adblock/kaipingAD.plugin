@@ -42,8 +42,6 @@ DOMAIN-KEYWORD,mktadsodr,REJECT
 # > 京东特价版
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_SmartPush - reject-200
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_advertising - reject-200
-# > 美人图横幅广告
-^https?:\/\/meirentu\.top\/static\/ - reject
 # > 皮皮图片横幅广告
 ^https?:\/\/www\.shmui\.com\/video\/ - reject
 ^https?:\/\/www\.xemhs\.com\/video\/ - reject
