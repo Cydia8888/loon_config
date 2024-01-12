@@ -45,7 +45,7 @@ DOMAIN-KEYWORD,mktadsodr,REJECT
 # > 皮皮图片横幅广告
 ^https?:\/\/www\.shmui\.com\/video\/ - reject
 ^https?:\/\/www\.xemhs\.com\/video\/ - reject
-^https?:\/\/www\.ppzix\.com\/\w{4}\/x - reject
+^https?:\/\/www\.ppzix\.com\/\w{4}\/x - reject-200
 
 # > 京东
 ^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=(start|queryMaterialAdverts) - reject
