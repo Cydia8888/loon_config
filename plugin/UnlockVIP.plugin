@@ -14,5 +14,5 @@ http-response ^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|e
 http-response ^https://xluser-ssl.xunlei.com/xluser.core.login/v3/getuserinfo requires-body=1,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/xunlei.js, timeout=60, tag=迅雷会员SVIP, enable = true
 
 [Mitm]
-hostname =*.caiyunapp.*,*cyapi*,pan.baidu.com,account.wps.cn,*.docer.wps.cn,vipapi.wps.cn,*.kuwo.cn, *.lrts.me
+hostname =*.caiyunapp.*,*cyapi*,pan.baidu.com,account.wps.cn,*.docer.wps.cn,vipapi.wps.cn,*.kuwo.cn, *.lrts.me,xluser-ssl.xunlei.com
 
