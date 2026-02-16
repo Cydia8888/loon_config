@@ -37,25 +37,6 @@ DOMAIN-KEYWORD,mktadsodr,REJECT
 ^https?:\/\/fund\.10jqka\.com\.cn\/hqapi\/static\/homepage\/queryinfo\/ - reject-200
 # > 天天基金：
 ^https?:\/\/appactive\.1234567\.com\.cn\/AppoperationApi\/OperationService\/GetAppStartImg - reject-dict
-# > 京东金融
-^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/(new)?na\/m\/getLoadingPicture - reject
-# > 京东特价版
-^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_SmartPush - reject-200
-^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_advertising - reject-200
-# > 皮皮图片横幅广告
-^https?:\/\/www\.shmui\.com\/video\/ - reject
-^https?:\/\/www\.xemhs\.com\/video\/ - reject
-^https?:\/\/www\.ppzix\.com\/\w{4}\/x - reject-200
-
-# > 京东
-^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=(start|queryMaterialAdverts) - reject
-^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ - reject
-
-[Script]
-# > 京喜
-http-response ^https?:\/\/api\.m\.jd\.com\/api\?functionId=delivery_show,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/startup.js,tag=京喜
-# > 京东
-http-response ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(hotWords|hotSearchTerms),requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/jd_json.js,tag=京东
 
 [MITM]
 hostname = fund.10jqka.com.cn,appactive.1234567.com.cn,ms.jr.jd.com,api.m.jd.com,bdsp-x.jd.com,dsp-x.jd.com,*.awtmt.com,issuecdn.baidupcs.com,*.cdn.bcebos.com,rp.hpplay.cn,*.amap.com,*.alicdn.com,cn-acs.m.cainiao.com,guide-acs.m.taobao.com
