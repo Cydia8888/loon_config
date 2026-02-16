@@ -39,4 +39,4 @@ DOMAIN-KEYWORD,mktadsodr,REJECT
 ^https?:\/\/appactive\.1234567\.com\.cn\/AppoperationApi\/OperationService\/GetAppStartImg - reject-dict
 
 [MITM]
-hostname = fund.10jqka.com.cn,appactive.1234567.com.cn,ms.jr.jd.com,api.m.jd.com,bdsp-x.jd.com,dsp-x.jd.com,*.awtmt.com,issuecdn.baidupcs.com,*.cdn.bcebos.com,rp.hpplay.cn,*.amap.com,*.alicdn.com,cn-acs.m.cainiao.com,guide-acs.m.taobao.com
+hostname = fund.10jqka.com.cn,appactive.1234567.com.cn
