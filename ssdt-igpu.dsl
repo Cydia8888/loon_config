@@ -228,8 +228,3 @@
       activityName: com.pptv.rrtvtrunk.main.presentation.MainActivity
       file: fileId=0f84d874-ada4-4b90-9829-a99f43950071&nodeId=5
       desc: 开屏首页弹窗
-
-- appName: 光大银行
-  packageName: com.cebbank.mobile.cemb
-  skipTexts:
-    - text: 跳过
