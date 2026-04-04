@@ -137,6 +137,11 @@
   skipTexts:
     - text: 关闭
 
+- appName: 光大银行
+  packageName: com.cebbank.mobile.cemb
+  skipTexts:
+    - text: 跳过
+
 - appName: 爱奇艺极速版
   packageName: com.qiyi.video.lite
   skipTexts:
